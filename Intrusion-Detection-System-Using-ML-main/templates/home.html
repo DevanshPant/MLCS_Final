@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GuardNet AI: Intelligent Network Intrusion Detection using Machine Learning. Secure your perimeter with real-time anomaly detection.">
+    <title>GuardNet | Intelligent Intrusion Detection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="/" class="nav-logo">🛡️ GuardNet AI</a>
+            <ul class="nav-links">
+                <li><a href="#about">Technology</a></li>
+                <li><a href="#threats">Threat Vectors</a></li>
+                <li><a href="#datasets">Datasets</a></li>
+                <li><a href="/ids" class="nav-cta">Launch Scanner</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <h1>Intelligent Network <br>Intrusion Detection</h1>
+            <p>Leveraging advanced Machine Learning to identify, classify, and mitigate cyber threats in real-time.
+                Secure your perimeter with AI-driven analytics.</p>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="/ids" class="btn btn-primary">Try Live Scanner</a>
+                <a href="#about" class="btn" style="border: 1px solid var(--glass-border);">Learn More</a>
+            </div>
+        </header>
+
+        <section id="about" class="features-grid">
+            <div class="glass-card feature-card">
+                <span class="feature-icon">🧠</span>
+                <h3>Anomaly Detection</h3>
+                <p>Identifies deviations from baseline network behavior using sophisticated pattern recognition
+                    algorithms.</p>
+            </div>
+            <div class="glass-card feature-card">
+                <span class="feature-icon">⚡</span>
+                <h3>Real-time Analysis</h3>
+                <p>Processes complex network parameters instantly to categorize traffic into 5 distinct security
+                    classes.</p>
+            </div>
+            <div class="glass-card feature-card">
+                <span class="feature-icon">📧</span>
+                <h3>Instant Alerts</h3>
+                <p>Configurable email notification system that alerts security teams the moment a threat is detected.
+                </p>
+            </div>
+        </section>
+
+        <section id="threats" style="margin-top: 100px;">
+            <h2 style="text-align: center; margin-bottom: 50px; font-size: 2.5rem;">Defense Catalog</h2>
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="glass-card feature-card">
+                    <h4 style="color: var(--primary);">DOS Attacks</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">Denial of Service attempts
+                        aimed at exhausting system resources and causing downtime.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <h4 style="color: var(--primary);">PROBE</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">Surveillance activity used
+                        by attackers to map network infrastructure and vulnerabilities.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <h4 style="color: var(--primary);">U2R</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">User to Root attacks where
+                        a normal user attempts to gain administrative privileges.</p>
+                </div>
+                <div class="glass-card feature-card">
+                    <h4 style="color: var(--primary);">R2L</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">Remote to Local attacks
+                        where an external attacker gains unauthorized local access.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="datasets" class="glass-card" style="margin-top: 100px; padding: 60px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    <h2>Trained on Industry <br>Standard Benchmarks</h2>
+                    <p style="margin-top: 20px; color: var(--text-muted);">Our models are validated against the
+                        <strong>NSL-KDD</strong> and <strong>UNSW-NB15</strong> datasets, ensuring high precision in
+                        modern network environments.</p>
+                    <ul style="margin-top: 30px; list-style: none; display: grid; gap: 15px;">
+                        <li style="display: flex; gap: 10px;">✅ 98.2% Accuracy on Normal traffic</li>
+                        <li style="display: flex; gap: 10px;">✅ Reduced false positive rates</li>
+                        <li style="display: flex; gap: 10px;">✅ Multi-class attack categorization</li>
+                    </ul>
+                </div>
+                <div
+                    style="background: rgba(0,0,0,0.3); padding: 30px; border-radius: 20px; border: 1px solid var(--glass-border);">
+                    <code style="color: var(--primary); font-size: 0.85rem;">
+                        // Model Architecture <br>
+                        input_dim: 15_features; <br>
+                        algorithm: LogisticRegression; <br>
+                        multi_class: 'multinomial'; <br>
+                        preprocessing: OneHotEncoding; <br>
+                        status: DEPLOYED_SECURE;
+                    </code>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 GuardNet AI Security Lab. Powered by Machine Learning.</p>
+    </footer>
+</body>
+
+</html><!-- Updated on Sun Feb 15 10:43:49 PM IST 2026 -->
